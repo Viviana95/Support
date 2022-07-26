@@ -6,4 +6,4 @@ use App\Controllers\Controller;
 
 //  new Controller;
 
-echo "hola";
+var_dump($_GET);
