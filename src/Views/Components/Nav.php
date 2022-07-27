@@ -7,20 +7,19 @@
 <Nav>
 <nav class="navbar navbar-expand-lg bg-dark fixed-top d-flex">
   <div class="container-fluid">
-  <img src="../Components/img/p 1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+      <a class="navbar-brand" rel="home" href='#' title="Logo"> 
+        <img style="max-width:100px; margin-top: -7px;" src='/src/assets/logo.png'> 
+      </a>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="?action=index">LISTADO DE SOLICITUDES</a>
+          <a class="nav-link active" style="color: white" aria-current="page" href="?action=index">LISTADO DE SOLICITUDES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?action=create">AÑADIR SOLICITUD</a>
+          <a class="nav-link" style="color: white" href="?action=create">AÑADIR SOLICITUD</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="?action=EditClient">DETALLE</a>
+        <a class="nav-link" style="color: white" href="?action=EditClient">DETALLE</a>
         </li>
       
       </ul>
