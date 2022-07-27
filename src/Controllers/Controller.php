@@ -86,8 +86,6 @@ class ClientsController {
         $clientHelper = new Clients();
         $client = $clientHelper->findById($id);
         $client->delete();
-
-
         $this-> logger->logDelete($client);
 
         $this->index(); //aqui vuelve a la vista index/home
