@@ -5,7 +5,7 @@
 
 
 <Nav>
-<nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
+<nav class="navbar navbar-expand-lg bg-white fixed-top d-flex">
 <a class=".navbar-toggler" rel="home" href='#' title="Logo"> 
   <img style="max-width:70px; margin-left: 10px" src='https://raw.githubusercontent.com/lauracastelao/image/main/assets/Rocket%20Light2.png'> 
 </a>
