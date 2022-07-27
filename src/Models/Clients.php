@@ -33,6 +33,7 @@ class Clients {
     public function getdate()
     {
         return $this->date;
+        var_dump($this->date);
     }
 
 	public function setdate($date)

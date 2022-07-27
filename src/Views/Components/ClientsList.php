@@ -1,13 +1,19 @@
 <html>
+<head>
+<!-- demás elementos-->
+<style type=”text/css”>
+navbar {color:#000033;}
+h2 {color:#003300;}
+</style>
+</head>
 
-<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg');
-            "> 
+<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/33.jpg'); background-repeat:no-repeat mt-5"> 
     <main>
         <div id="wrapper">
-            <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content-wrapper" class="d-flex flex-column mt-5">
                 <div id="content">
                     <div class="container-fluid">
-                        <div class="card shadow border-warning border border-3">
+                        <div class="card shadow border-warning border border-3 mt-5">
                             
                         <div class="card-body">
                             <div class="table-responsive">
@@ -20,7 +26,7 @@
                                             <th>Theme</th>
                                             <th>Detail</th>
                                             <th>id</th>
-                                            <th><a href="?action=create">
+                                            <th><a href="?action=index">
                                             <button type="button" class="btn btn-outline-dark go-add-task float-end btn-mg">completed</button>
                                         </a>
                                         </th>
@@ -37,10 +43,10 @@
                         <td>{$client->getissue()}</td>
                         <td>{$client->getdetail()}</td>
                         <td>{$client->getId()}</td>
-                        <td>               
-                        <a href='?action=edit&id={$client->getId()}'><i class='lnr lnr-pencil'></i></a>
-                            <a href='?action=delete&id={$client->getId()}'><i class='lnr lnr-trash'></i>X</a><br>
-                            <a href='?action=edit&id={$client->getId()}'><i class='lnr lnr-pencil'></i>edit</a>
+                        <td>  
+                        <a href='?action=edit&id={$client->getId()}'><button>edit</button></a>          
+                        <a href='?action=delete&id={$client->getId()};
+                                 ?action=index'><button>delete</button></a>
                         </td>
                     </tr>
                     ";
