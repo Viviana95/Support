@@ -1,25 +1,25 @@
 <html>
 
-<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg');
-            "> 
-    <main>
+<body id="fondo" class="d-flex flex-column justify-content-center  my-5 p-2" style="background-color: #43372b; height:max-content"> 
+    <main class="img-fluid  justify-content-center mt-5 p-2 m-5" style="background-image: url('https://raw.githubusercontent.com/lauracastelao/image/main/assets/fondo.png')" >
         <div id="wrapper mt-5">
-            <div id="content-wrapper" class="d-flex flex-column mt-5">
+            <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
                     <div class="container">
-                        <div class="card shadow border-info border border-3">
-                        <h2 class="text-center bg-info" >List <i class="fa-solid fa-list"></i></h2>
+                        <div class="card shadow my-5 bg-light border-secondary border border-3">
+                        <h3 class="text-center bg-secondary">List <i class="fa-solid fa-list" style="color:bisque"></i></h3>
+                       
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table" scope="row" id="dataTable" cellspacing="1">
+                            <div class="table-responsive-sm">
+                                <table class="table text-dark table-hover" scope="row" id="dataTable" cellspacing="1">
                                  <thead>
-                                        <tr>
+                                            <tr>
                                             <th>Date</th>
                                             <th>Name</th>
                                             <th>Theme</th>
                                             <th>Detail</th>
                                             <th>id</th>
-                                            <th></th>
+                                            <th>Action</th>
                                         </a>
                                         </th>
                                         </thead>
@@ -37,8 +37,8 @@
                         <td>               
                            <div> 
                     
-                            <a href='?action=edit&id={$client->getId()}'><i class='fa-solid fa-marker'></i></a>
-                            <a href='?action=delete&id={$client->getId()}'><i class='fa-solid fa-trash-can'></i></a></div>
+                            <a class='me-3' href='?action=edit&id={$client->getId()}'><i class='fa-solid fa-marker'></i></a>
+                            <a href='?action=delete&id={$client->getId()}'><i class='fa-solid fa-trash-can' style='color:red'></i></a></div>
                             
                         </td>
                     </tr>
