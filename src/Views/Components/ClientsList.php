@@ -1,13 +1,14 @@
 <html>
 
-<body id="fondo" class="d-flex flex-column justify-content-center  my-5 p-2" style="background-color: #43372b; height:max-content"> 
-    <main class="img-fluid  justify-content-center mt-5 p-2 m-5" style="background-image: url('https://raw.githubusercontent.com/lauracastelao/image/main/assets/fondo.png')" >
+<body class="d-flex flex-column text-white"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
+            "> 
+    <main>
         <div id="wrapper mt-5">
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
                     <div class="container">
-                        <div class="card shadow my-5 bg-light border-secondary border border-3">
-                        <h3 class="text-center bg-secondary">List <i class="fa-solid fa-list" style="color:bisque"></i></h3>
+                        <div class="card shadow border-dark border border-2">
+                        <div class="bg-secondary text-center light mb-4 m-label mt-3" style> <strong> LIST </strong>📃 </p></label> </div>
                         <div class="card-body">
                             <div class="table-responsive-sm">
                                 <table class="table text-dark table-hover" scope="row" id="dataTable" cellspacing="1">
