@@ -24,7 +24,7 @@ class ClientsController {
         if (isset($_GET["action"]) && ($_GET["action"] == "store")) {
             $this->store($_POST);
             return;
-            var_dump($_POST['name']);
+            
         }
 
         if (isset($_GET["action"]) && ($_GET["action"] == "edit")) {
@@ -40,7 +40,7 @@ class ClientsController {
         if (isset($_GET["action"]) && ($_GET["action"] == "delete")) {
 
             $this->delete($_GET["id"]);
-            return;
+            return $this->index();
         }
 
         $this->index();
@@ -70,7 +70,7 @@ class ClientsController {
 
 	
 		// crea un objeto de tipo cliente sin id
-        $newClient = new Clients(Null,$request["client"],$request["issue"],$request["description"],);
+        $newClient = new Clients(Null,$request["client"],$request["issue"],$request["description"],$request["date"],);
 
 		//hace in INSERT en la base de datos un nuevo registro con los datos del cliente
         $newClient->save();

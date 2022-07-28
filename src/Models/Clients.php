@@ -79,11 +79,11 @@ class Clients {
     public function save(): void
     {
 		if($this->getId()){
-			$this->database->mysql->query("UPDATE `{$this->table}` SET `client` =  '{$this->client}', `issue` =  '{$this->issue}' WHERE `id` = {$this->id}");
+			$this->database->mysql->query("UPDATE `{$this->table}` SET `client` =  '{$this->client}', `issue` =  '{$this->issue}', `detail` =  '{$this->detail}', `date` =  '{$this->date}' WHERE `id` = {$this->id}");
    
 		} else {
 			/* crea lineas nuevas en la tabla */
-			$this->database->mysql->query("INSERT INTO `{$this->table}` (`client`, `issue`,`detail`,`date`) VALUES ('$this->client','$this->issue','$this->detail','$this->date');");
+			$this->database->mysql->query("INSERT INTO `{$this->table}` (`client`, `issue`,`detail`,`date`) VALUES ('$this->client','$this->issue','$this->detail','$this->date')");
 		}
 		
 		
@@ -91,7 +91,7 @@ class Clients {
 
     public function all()//con el metodo all() nos conectamos a la base de datos
     {
-        $query = $this->database->mysql->query("select * FROM {$this->table}");//mediante el método query hacemos una consulta a través de una sentencia sql???
+        $query = $this->database->mysql->query("SELECT * FROM {$this->table} ORDER BY date DESC");//mediante el método query hacemos una consulta a través de una sentencia sql???
         $clientsArray = $query->fetchAll();//una vez obtenido el resultado de la consulta con el fetch recuperamos todos los datos
                 
         $clientList = [];//esto vuelve en formato array, el cual contiene otros arrays(arrays asociativos)

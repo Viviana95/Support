@@ -8,7 +8,6 @@
                     <div class="container">
                         <div class="card shadow my-5 bg-light border-secondary border border-3">
                         <h3 class="text-center bg-secondary">List <i class="fa-solid fa-list" style="color:bisque"></i></h3>
-                       
                         <div class="card-body">
                             <div class="table-responsive-sm">
                                 <table class="table text-dark table-hover" scope="row" id="dataTable" cellspacing="1">

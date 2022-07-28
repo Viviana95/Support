@@ -2,7 +2,10 @@
 ">
     <div class="container d-flex justify-content-center mt-5">
 
-
+<?php
+date_default_timezone_set('Europa/Spain');
+$current_date=date("Y-m-d H:i:s");
+?>
 
         <form method="post" action="?action=store" class="img-fluid text-dark border border-dark border border-3 text-white p-2 m-5 d-flex justify-content-evenly w-100 " style="background-image: url('https://raw.githubusercontent.com/lauracastelao/image/main/assets/fondo.png')" ;>
 
@@ -12,6 +15,10 @@
                         <div class="bg-secondary text-center light mb-4 ">
                             <label for="exampleFormControlTextarea1" class="form-label" style> <strong> ADD </strong>📒 </p></label>
 
+                        </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1" class="form-label text-dark"><strong>Date</strong></label>
+                            <input name="date" class="form-control" id="Input3" type="datetime" value="<?=$current_date ?>">
                         </div>
 
                         <div class="mb-2">
