@@ -18,9 +18,7 @@
         <li class="nav-item">
           <a class="nav-link" style="color: black" href="?action=create">AÑADIR SOLICITUD</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" style="color: black" href="?action=EditClient">DETALLE</a>
-        </li>
+        
       
       </ul>
     </div>

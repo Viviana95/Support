@@ -1,14 +1,14 @@
 <html>
 
-<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg');
+<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
             "> 
     <main>
         <div id="wrapper mt-5">
             <div id="content-wrapper" class="d-flex flex-column mt-5">
                 <div id="content">
                     <div class="container">
-                        <div class="card shadow border-info border border-3">
-                        <h2 class="text-center bg-info" >List <i class="fa-solid fa-list"></i></h2>
+                        <div class="card shadow border-dark border border-2">
+                        <h2 class="bg-secondary text-center light " >List <i class="fa-solid fa-list"></i></h2>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table" scope="row" id="dataTable" cellspacing="1">
