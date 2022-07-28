@@ -1,4 +1,4 @@
-<body class="d-flex flex-column mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg') ; 
+<body class="d-flex flex-column mb-3" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg')"> 
     <div class=" container d-flex justify-content-center mt-5">
 
 <?php
