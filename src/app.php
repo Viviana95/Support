@@ -16,4 +16,5 @@ $controller = new ClientsController(new Clients());
 
 require_once("./src/Views/Components/Footer.php");
 ?>
+
 </html>

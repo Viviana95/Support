@@ -8,7 +8,7 @@
                 <div id="content">
                     <div class="container">
                         <div class="card shadow border-dark border border-2">
-                        <div class="bg-secondary text-center light mb-4 m-label" style> <strong> LIST </strong>📃 </p></label> </div>
+                        <div class="bg-secondary text-center light mb-4 m-label mt-3" style> <strong> LIST </strong>📃 </p></label> </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table" scope="row" id="dataTable" cellspacing="1">

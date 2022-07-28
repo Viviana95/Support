@@ -6,14 +6,15 @@ use App\Core\View;
 use App\Models\Clients;
 
 
-class ClientsController {
+class ClientsController
+{
 
-   
+
 
     public function __construct()
     {
-		
-        
+
+
         if (isset($_GET["action"]) && ($_GET["action"] == "create")) {
             $this->create();
             return;
@@ -44,7 +45,7 @@ class ClientsController {
         $this->index();
     }
 
-    public function index(): void  //aqui recupero el array(clientList)y se lo paso a la vista
+    public function index(): void
     {
         $client = new Clients();
         $client = $client->all();
@@ -53,11 +54,7 @@ class ClientsController {
 
     public function create(): void
     {
-        /*echo 'Aqui tendremos el Formulario para crear';*/
         new View("CreateClient");
-		
-
-        
     }
 
     public function store(array $request): void
@@ -66,17 +63,14 @@ class ClientsController {
         var_dump($request["issue"]);
         var_dump($request["description"]);
 
-	
-		// crea un objeto de tipo cliente sin id
-        $newClient = new Clients(Null,$request["client"],$request["issue"],$request["description"],);
 
-		//hace in INSERT en la base de datos un nuevo registro con los datos del cliente
+        $newClient = new Clients(Null, $request["client"], $request["issue"], $request["description"],);
+
         $newClient->save();
 
-        //$this-> logger->logCreate($newClient);
 
 
-        $this->index(); //aqui vuelve a la vista index/home
+        $this->index();
     }
 
     public function delete($id)
@@ -84,39 +78,34 @@ class ClientsController {
         $clientHelper = new Clients();
         $client = $clientHelper->findById($id);
         $client->delete();
-       
 
-        $this->index(); //aqui vuelve a la vista index/home
+
+        $this->index();
     }
 
-    public function edit($id) : void
+    public function edit($id): void
     {
-     //encuentra al cliente por el id
-        
+
+
         $clientHelper = new Clients();
         $client = $clientHelper->findById($id);
-       
-        new View("EditClient", ["client" => $client]); //carga la vista con el formulario de edicion y le pasa un objeto cliente para editar
-        
+
+        new View("EditClient", ["client" => $client]);
     }
-    
+
     public function update(array $request, $id)
     {
-        // Update client By ID
         $clientHelper = new Clients();
         $client = $clientHelper->findById($id);
-		
-        $client->setclient($request["client"]);
-		$client->setissue($request["issue"]);
-		$client->setdetail($request["detail"]);
-		
-		
-		//hace UPDATE en la base de datos con los datos del objeto cliente en el registro con Id = $id
-        $client->update();
-        
-        //$this-> logger->logUpdate($client);
 
-        // Return to View List
-        $this->index(); //aqui vuelve a la vista index/home(ClientsList)
+        $client->setclient($request["client"]);
+        $client->setissue($request["issue"]);
+        $client->setdetail($request["detail"]);
+
+
+        $client->update();
+
+
+        $this->index();
     }
 }
