@@ -1,6 +1,6 @@
 <html>
 
-<body class="d-flex flex-column"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
+<body class="d-flex flex-column text-white"style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
             "> 
     <main>
         <div id="wrapper mt-5">
@@ -8,7 +8,7 @@
                 <div id="content">
                     <div class="container">
                         <div class="card shadow border-dark border border-2">
-                        <h2 class="bg-secondary text-center light " >List <i class="fa-solid fa-list"></i></h2>
+                        <div class="bg-secondary text-center light mb-4 m-label" style> <strong> LIST </strong>📃 </p></label> </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table" scope="row" id="dataTable" cellspacing="1">

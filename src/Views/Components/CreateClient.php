@@ -8,7 +8,7 @@
         <div class="name_theme d-flex flex-column">
              <div class="card border border-dark border border-2 " style="width: 30rem; "> 
                 <div class="card-header">
-                    <div class="bg-secondary text-center light mb-4 ">
+                    <div class="bg-secondary text-center dark mb-4 ">
                         <label for="exampleFormControlTextarea1" class="form-label" style> <strong> ADD </strong>📒 </p></label>
 
                     </div>

@@ -1,5 +1,5 @@
 <?php
-var_dump($data['client']);
+// var_dump($data['client']);
 
 $myCliente = $data['client'];
 ?>
