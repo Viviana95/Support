@@ -1,4 +1,4 @@
-<body class="d-flex flex-column mb-3" style="background-color: #43372b " ; ">
+<body class="d-flex flex-column mb-3" style="background-color: #43372b " ;>
     <div class=" container d-flex justify-content-center mt-5">
 
 
