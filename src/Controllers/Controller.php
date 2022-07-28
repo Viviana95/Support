@@ -4,18 +4,16 @@ namespace App\Controllers;
 
 use App\Core\View;
 use App\Models\Clients;
-use App\Models\Logger;
+
 
 class ClientsController {
 
-    private Logger $logger;
+   
 
-    public function __construct(Logger $logger)
+    public function __construct()
     {
 		
-         $this->logger = $logger;
-		var_dump($_POST);
-
+        
         if (isset($_GET["action"]) && ($_GET["action"] == "create")) {
             $this->create();
             return;
@@ -86,7 +84,7 @@ class ClientsController {
         $clientHelper = new Clients();
         $client = $clientHelper->findById($id);
         $client->delete();
-        $this-> logger->logDelete($client);
+       
 
         $this->index(); //aqui vuelve a la vista index/home
     }
